@@ -15,7 +15,7 @@ export default function About() {
     <section id="about" className="mx-auto max-w-6xl px-6 py-20 lg:px-10">
       <SectionTag>About Me</SectionTag>
 
-      <div className="mt-12 grid gap-8 lg:grid-cols-2">
+      <div className="mt-12 grid gap-8 lg:grid-cols-2 lg:items-start">
         <div className="rounded-3xl bg-gradient-to-br from-blue-600 to-blue-700 p-8 text-white shadow-xl shadow-blue-900/10 sm:p-10">
           <h3 className="text-2xl font-bold">Building Digital Excellence</h3>
           <p className="mt-5 text-[15px] leading-relaxed text-blue-50/90">

@@ -14,36 +14,18 @@ export default function Projects() {
 
       <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {projects.map((p) => (
-          <article
+          <div
             key={p.title}
-            className="overflow-hidden rounded-2xl border border-line bg-white shadow-sm transition-shadow hover:shadow-lg"
+            className="group relative aspect-square overflow-hidden rounded-2xl border border-line shadow-sm transition-shadow hover:shadow-xl"
           >
-            <div className="relative h-44 w-full">
-              <Image
-                src={p.image}
-                alt={p.title}
-                fill
-                sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                className="object-cover"
-              />
-            </div>
-            <div className="p-6">
-              <h3 className="font-bold text-ink">{p.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-muted">
-                {p.description}
-              </p>
-              <div className="mt-4 flex flex-wrap gap-2">
-                {p.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="rounded-full bg-blue-50 px-2.5 py-1 text-[11px] font-medium text-blue-700"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            </div>
-          </article>
+            <Image
+              src={p.image}
+              alt={p.title}
+              fill
+              sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+              className="object-cover transition-transform duration-300 group-hover:scale-105"
+            />
+          </div>
         ))}
       </div>
     </section>
