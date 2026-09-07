@@ -19,13 +19,13 @@ export default function About() {
         <div className="rounded-3xl bg-gradient-to-br from-blue-600 to-blue-700 p-8 text-white shadow-xl shadow-blue-900/10 sm:p-10">
           <h3 className="text-2xl font-bold">Building Digital Excellence</h3>
 
-          <div className="mt-5 space-y-5">
+          <div className="mt-4 space-y-4">
             {aboutBlocks.map((block) => (
               <div key={block.image}>
                 <p className="text-[15px] leading-relaxed text-blue-50/90">
                   {block.text}
                 </p>
-                <div className="relative mt-4 aspect-[16/10] w-full overflow-hidden rounded-xl border border-white/15">
+                <div className="relative mt-3 h-[220px] w-full overflow-hidden rounded-xl border border-white/15">
                   <Image
                     src={block.image}
                     alt="Dustin's work in practice"
