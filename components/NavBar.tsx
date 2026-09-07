@@ -42,7 +42,7 @@ export default function NavBar() {
         </nav>
 
         <a
-          href={`mailto:${profile.email}`}
+          href="#contact"
           className="hidden rounded-full bg-brand-gradient px-4 py-2 text-sm font-semibold text-white shadow-md shadow-blue-900/30 transition-transform hover:scale-105 md:block"
         >
           Contact
@@ -72,7 +72,7 @@ export default function NavBar() {
             </a>
           ))}
           <a
-            href={`mailto:${profile.email}`}
+            href="#contact"
             className="mt-2 rounded-full bg-brand-gradient px-4 py-2 text-center text-sm font-semibold text-white"
           >
             Contact

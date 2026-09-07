@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Dustin Long — Full-Stack Developer | Dynamics 365, Power Platform & Azure",
+  title: "Dustin Long | Full-Stack Developer | Dynamics 365, Power Platform & Azure",
   description:
-    "Full-stack developer specializing in Dynamics 365, Power Platform, and Azure — rebuilding enterprise systems that have drifted past their intended configuration, and building applied-AI features on top of them.",
+    "Full-stack developer specializing in Dynamics 365, Power Platform and Azure, rebuilding enterprise systems that have drifted past their intended configuration and building AI features on top of them.",
 };
 
 export default function RootLayout({

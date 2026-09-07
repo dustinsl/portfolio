@@ -19,18 +19,12 @@ export default function Contact() {
 
         <div className="mt-8 flex flex-wrap justify-center gap-4">
           <a
-            href={`mailto:${profile.email}`}
-            className="rounded-full bg-brand-gradient px-7 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-900/30 transition-transform hover:scale-105"
-          >
-            {profile.email}
-          </a>
-          <a
             href={profile.linkedin}
             target="_blank"
             rel="noreferrer"
-            className="rounded-full border border-white/20 px-7 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/10"
+            className="rounded-full bg-brand-gradient px-7 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-900/30 transition-transform hover:scale-105"
           >
-            LinkedIn
+            Connect on LinkedIn
           </a>
         </div>
 

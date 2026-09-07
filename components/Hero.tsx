@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { profile, heroIntro } from "@/lib/data";
 
 const badges = ["C#", ".NET", "Azure", "SQL", "Power Platform", "Python"];
@@ -67,16 +68,17 @@ export default function Hero() {
           </div>
 
           <div className="flex justify-center lg:col-span-5 lg:justify-end">
-            <div className="relative flex h-56 w-56 items-center justify-center rounded-full bg-brand-gradient p-1 shadow-2xl shadow-blue-950/50 sm:h-64 sm:w-64">
-              <div className="flex h-full w-full items-center justify-center rounded-full bg-navyLight">
-                <span className="text-6xl font-bold text-white/90">
-                  {profile.initials}
-                </span>
+            <div className="relative flex h-56 w-56 items-center justify-center rounded-full bg-brand-gradient p-1.5 shadow-2xl shadow-blue-950/50 sm:h-64 sm:w-64">
+              <div className="relative h-full w-full overflow-hidden rounded-full bg-navyLight">
+                <Image
+                  src={profile.photo}
+                  alt={profile.name}
+                  fill
+                  sizes="256px"
+                  className="object-cover"
+                  priority
+                />
               </div>
-              <span className="absolute -bottom-2 right-4 flex items-center gap-1.5 rounded-full bg-white px-3 py-1.5 text-xs font-semibold text-ink shadow-md">
-                <span className="h-2 w-2 rounded-full bg-emerald-500" />
-                Open to work
-              </span>
             </div>
           </div>
         </div>

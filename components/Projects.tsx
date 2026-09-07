@@ -1,13 +1,5 @@
+import Image from "next/image";
 import { projects } from "@/lib/data";
-
-const patterns = [
-  "from-blue-500 to-indigo-600",
-  "from-orange-400 to-rose-500",
-  "from-emerald-500 to-teal-600",
-  "from-violet-500 to-purple-600",
-  "from-cyan-500 to-blue-600",
-  "from-amber-500 to-orange-600",
-];
 
 export default function Projects() {
   return (
@@ -16,22 +8,24 @@ export default function Projects() {
         Featured Projects
       </span>
       <p className="mx-auto mt-5 max-w-xl text-center text-sm text-muted">
-        Real engagements from client work — enterprise consulting projects,
-        not public repos, so most details live behind NDAs.
+        Real engagements from client work. These are enterprise consulting
+        projects, not public repos, so most details live behind NDAs.
       </p>
 
       <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {projects.map((p, i) => (
+        {projects.map((p) => (
           <article
             key={p.title}
             className="overflow-hidden rounded-2xl border border-line bg-white shadow-sm transition-shadow hover:shadow-lg"
           >
-            <div
-              className={`flex h-32 items-center justify-center bg-gradient-to-br ${patterns[i % patterns.length]}`}
-            >
-              <span className="text-3xl font-bold text-white/25">
-                {String(i + 1).padStart(2, "0")}
-              </span>
+            <div className="relative h-44 w-full">
+              <Image
+                src={p.image}
+                alt={p.title}
+                fill
+                sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                className="object-cover"
+              />
             </div>
             <div className="p-6">
               <h3 className="font-bold text-ink">{p.title}</h3>
