@@ -7,19 +7,18 @@ html {
 }
 
 body {
-  background-color: #0e1116;
-  color: #e9e6dd;
+  background-color: #f5f7fb;
+  color: #0f172a;
 }
 
 ::selection {
-  background-color: #e8a34a;
-  color: #0e1116;
+  background-color: #3b82f6;
+  color: #ffffff;
 }
 
-/* visible keyboard focus, kept subtle but real */
 a:focus-visible,
 button:focus-visible {
-  outline: 1px solid #e8a34a;
+  outline: 2px solid #3b82f6;
   outline-offset: 3px;
 }
 
@@ -30,9 +29,4 @@ button:focus-visible {
     transition-duration: 0.001ms !important;
     scroll-behavior: auto !important;
   }
-}
-
-.grain {
-  background-image: radial-gradient(#2a3038 0.5px, transparent 0.5px);
-  background-size: 3px 3px;
 }

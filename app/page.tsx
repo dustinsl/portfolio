@@ -1,21 +1,25 @@
 import NavBar from "@/components/NavBar";
 import Hero from "@/components/Hero";
-import Summary from "@/components/Summary";
-import Experience from "@/components/Experience";
+import StatsBar from "@/components/StatsBar";
+import About from "@/components/About";
 import Skills from "@/components/Skills";
-import Credentials from "@/components/Credentials";
+import Experience from "@/components/Experience";
+import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-ink">
+    <main className="min-h-screen bg-surface">
       <NavBar />
       <Hero />
-      <Summary />
-      <Experience />
+      <StatsBar />
+      <About />
       <Skills />
-      <Credentials />
+      <Experience />
+      <Projects />
       <Contact />
+      <Footer />
     </main>
   );
 }

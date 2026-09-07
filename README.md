@@ -1,8 +1,8 @@
 # Dustin Long — Portfolio
 
-A single-page Next.js (App Router + TypeScript + Tailwind) portfolio built from
-the resume content: hero, approach/summary, work history, capabilities,
-credentials, and contact.
+A single-page Next.js (App Router + TypeScript + Tailwind) portfolio: hero,
+stats, about/what-I-do, skills, work experience & education timeline,
+featured projects, and a simple contact section.
 
 ## Run it locally
 
@@ -22,9 +22,18 @@ npm start
 
 ## Notes
 
-- Fonts (Space Grotesk, IBM Plex Mono) load from Google Fonts via
-  `next/font/google` at build time, so an internet connection is required
-  for `npm run build` / `npm run dev` to fetch them the first time.
+- Uses system fonts only (no external font fetch), so builds work offline
+  and behind restrictive networks/firewalls.
 - All content lives in `lib/data.ts` — edit that file to update copy,
-  work history, skills, or certifications without touching components.
-- Colors and fonts are defined as Tailwind tokens in `tailwind.config.ts`.
+  stats, skills, work history, or projects without touching components.
+- Colors/gradients are defined as Tailwind tokens in `tailwind.config.ts`.
+- No photo was provided, so the hero uses an initials avatar ("DL")
+  instead of a headshot — swap in `components/Hero.tsx` if you'd like to
+  add a real photo later.
+- The "Featured Projects" cards are built from your actual resume
+  engagements (F&O integrations, invoice automation, HIPAA Azure infra,
+  etc.) rather than invented demo projects, since this is consulting work
+  without public repos/live links.
+- No testimonials section is included — the reference site had quotes
+  attributed to named clients, and there weren't any real ones to use.
+  Happy to add a section for genuine client quotes once you have them.
