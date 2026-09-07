@@ -10,7 +10,7 @@ export const profile = {
 };
 
 export const heroIntro =
-  "I'm an AI full-stack developer who builds scalable, high-performance solutions on Dynamics 365, Power Platform and Azure. I specialize in turning drifted, over-configured implementations back into systems that actually match the business, choosing custom C# where it's warranted and low-code where it isn't.";
+  "I'm an AI Full-stack developer who builds scalable, high-performance solutions on Dynamics 365, Power Platform and Azure. I specialize in turning drifted, over-configured implementations back into systems that actually match the business, choosing custom C# where it's warranted and low-code where it isn't.";
 
 export const stats = [
   { value: "10+", label: "Years Experience" },
@@ -19,15 +19,25 @@ export const stats = [
   { value: "9", label: "Industries Served" },
 ];
 
-export const summary =
-  "I've spent the last decade inside Azure, Dynamics 365, Power Apps and Dataverse, mostly called in after an implementation has been configured well past what it was built to do. My job is to work out what's actually wrong, then decide what genuinely needs custom C# and what a low-code Power Platform fix can handle without over-building it. On the infrastructure side I deliver production-grade Azure, including App Service, Functions, Logic Apps and Entra ID, for manufacturing, healthcare and financial services clients who have real compliance requirements.";
-
-export const aboutImages = ["/images/b1.jpg", "/images/b2.jpg", "/images/b3.jpg"];
+export const aboutBlocks = [
+  {
+    text: "I've spent the last decade inside Azure, Dynamics 365, Power Apps and Dataverse, mostly called in after an implementation has been configured well past what it was built to do.",
+    image: "/images/b1.jpg",
+  },
+  {
+    text: "My job is to work out what's actually wrong, then decide what genuinely needs custom C# and what a low-code Power Platform fix can handle without over-building it.",
+    image: "/images/b2.jpg",
+  },
+  {
+    text: "On the infrastructure side I deliver production-grade Azure, including App Service, Functions, Logic Apps and Entra ID, for manufacturing, healthcare and financial services clients who have real compliance requirements.",
+    image: "/images/b3.jpg",
+  },
+];
 
 export const services = [
   {
     icon: "sparkles",
-    title: "AI Full-Stack Development",
+    title: "AI Full-Stack",
     description:
       "Forecasting, anomaly detection and LLM-powered agents wired directly into Dynamics and Power Automate workflows.",
     images: ["/images/w1.jpg", "/images/w2.jpg", "/images/w3.jpg"],
